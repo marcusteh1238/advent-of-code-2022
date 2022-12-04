@@ -15,7 +15,9 @@ async function solution() {
         const foodItem = arr[i];
         if (foodItem !== "") { // is not blank line, continue
             curr += Number(foodItem);
-            continue;
+            if (i < len - 1) { // consider bundle when last element
+                continue;
+            }
         }
          // is blank line, end of bundle
         if (curr > max) { // replace if larger than max
