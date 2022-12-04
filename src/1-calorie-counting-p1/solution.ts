@@ -13,14 +13,15 @@ async function solution() {
     let curr = 0; // value of current bundle
     for (let i = 0; i < len; i++) {
         const foodItem = arr[i];
-        if (foodItem === "") { // is blank line, end of bundle
-            if (curr > max) {
-                max = curr;
-            }
-            curr = 0;
+        if (foodItem !== "") { // is not blank line, continue
+            curr += Number(foodItem);
             continue;
         }
-        curr += Number(foodItem);
+         // is blank line, end of bundle
+        if (curr > max) { // replace if larger than max
+            max = curr;
+        }
+        curr = 0;
     }
     console.log(max); // return max bundle
 }
