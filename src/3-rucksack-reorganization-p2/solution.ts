@@ -1,4 +1,4 @@
-// https://adventofcode.com/2022/day/2
+// https://adventofcode.com/2022/day/3
 
 import path from "path";
 import { getInput } from "../helpers/getInput";
