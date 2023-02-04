@@ -6,6 +6,14 @@ I will probably be doing everything in NodeJS but we'll see how it goes!
 
 To make it easier to keep track of, there will be a folder for each puzzle of the event. Maybe I'll add notes about how I came to a solution if I have the energy or time?
 
+# Current Progress
+
+Day 14
+
+## Skipped:
+
+Day 11 part 2
+
 # Setup
 
 1. npm i
